@@ -1,0 +1,126 @@
+body, html{
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Helvectia', sans-serif;
+    background: rgb(26, 188, 156);
+    background: -moz-linear-gradient(-45deg, rgba(26, 188, 156, 1) 0%,
+rgba(142, 68, 173, 1) 100%);
+    background: -webkit-linear-gradient(-45deg, rgba(26, 188, 156, 1) 
+0%, rgba(142, 68, 173, 1) 100%);
+    background: linear-gradient(135deg, rgba(26, 188, 156, 1) 0%,
+rgba(142, 68, 173, 1) 100%);
+}
+
+nav li{
+    display: inline;
+    margin: 20px;
+}
+
+nav ul{
+    background-color: black;
+    margin: 0px;
+    list-style-type: none;
+    width: 100%;
+    padding: 20px;
+
+}
+
+nav{
+    display: block;
+    color: white;
+}
+
+nav a{
+    color:#555555;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color:white;
+}
+
+.hero-text{
+    color:white;
+    text-align: left;
+    padding-left: 20px;
+}
+
+h1 {
+	font-size: 24px;
+	margin: 10px 0 0 0;
+	font-weight: lighter;
+	text-transform: uppercase;
+	color: #eeeeee;
+}
+
+p {
+	font-size: 12px;
+	font-weight: light;
+	color: #333333;
+}
+
+span a {
+	font-size: 18px;
+	color: #cccccc;
+	text-decoration: none;
+	margin: 0 10px;
+	transition: all 0.4s ease-in-out;
+	&:hover {
+		color: #ffffff;
+	}
+}
+
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+}
+
+.container {
+	width: 60%;
+	height: 100%;
+    float: right;
+	display: flex;
+    flex-direction: column;
+	justify-content: center;
+	align-items: center;
+    text-align: center;
+}
+
+.avatar {
+	width: 150px;
+	height: 150px;
+	box-sizing: border-box;
+	border: 5px white solid;
+	border-radius: 50%;
+	overflow: hidden;
+	box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+	transform: translatey(0px);
+	animation: float 6s ease-in-out infinite;
+	img { width: 100%; height: auto; }
+}
+
+.content ul{
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+#side{
+    width:35%;
+    float: left;
+    padding: 20px;
+}
+
+#profile-image{
+    width:100%
+}
